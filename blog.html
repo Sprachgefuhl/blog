@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scott Geiser's blog. Web-design, coffee, etc.">
+  	<title>Home | Scott Geiser</title>
+
+    <!--stylesheets-->
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qyx1yaa.css">
+  </head>
+  
+  <body>
+    <header>
+        <nav class="header-nav">
+  	      <ul>
+  	  	    <li><a href="./">Projects</a></li>
+  		      <li><a href="./">About</a></li>
+  	  	    <li><a href="./">Contact</a></li>
+  	      </ul>
+        </nav>
+	  </header>
+
+    <main role="main">
+      <section class="content">
+        <h1 class="home-heading">Scott Geiser is a web designer,
+        coffee finatic, and bibliophile.</h1>
+        
+        <p class="nav-social">
+          <a href="https://twitter.com/scott_geiser">Twitter</a>
+          |
+          <a href="https://www.instagram.com/scottgeiser_/">Instagram</a>
+          |
+          <a href="https://github.com/Sprachgefuhl">Github</a>
+        </p>
+
+<!--         <ul class="home-recent-list">
+          <li>
+            <span>
+              <a href="./media/image_temp1.jpg">
+              <img src="{% static "coffee_map/coffeemap.jpg" %}" alt="Coffee Map project"></a>
+            </span>
+            <p>Coffee Map is a project that is cool.</p>
+          </li>
+          {% for project in object_list|slice:":6" %}
+          <li>
+            <span>
+              <a href="{% url 'scotts_blog_app:project_detail' project.slug %}">
+              <img src="{{ project.project_art_icon.url }}" alt="{{ project.project_title }}"></a>
+            </span>
+            <p>{{ project.project_lead|safe }}</p>
+        
+          {% empty %}
+            <li>No threads added yet.</li>
+          {% endfor %}
+        </ul>
+
+        <p class="home-bottom-nav">
+        <a href="{% url 'scotts_blog_app:home_page' %}">All Projects</a>
+        |
+        <a href="{% url 'scotts_blog_app:home_page' %}">All Blogposts</a>
+        </p> -->
+        
+      </section>
+    </main>
+  </body>
+</html>
