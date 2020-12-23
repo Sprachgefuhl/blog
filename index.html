@@ -4,19 +4,22 @@
   	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Scott Geiser's blog. Web-design, coffee, etc.">
-  	<title>Home | Scott Geiser</title>
+  	<title>Scott Geyser</title>
 
     <!--stylesheets-->
-    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://use.typekit.net/qyx1yaa.css">
   </head>
   
   <body>
     <header>
+      <a class="header-logo" href="./index.html"> <!-- LOGO/AVATAR TOP LEFT -->
+        <img src="./img/avatar.png" alt="Scott Geyser">
+      </a> 
+
         <nav class="header-nav">
   	      <ul>
-  	  	    <li><a href="./">Projects</a></li>
-  		      <li><a href="./">About</a></li>
+  	  	    <li><a href="./blogposts.html">Blogposts</a></li>
   	  	    <li><a href="./">Contact</a></li>
   	      </ul>
         </nav>
@@ -24,44 +27,36 @@
 
     <main role="main">
       <section class="content">
-        <h1 class="home-heading">Scott Geiser is a web designer,
-        coffee finatic, and bibliophile.</h1>
+        <h1 class="home-heading">Scott Geiser</h1>
+        <h2 class="home-subheading">Writer and reader of...</h2>
         
         <p class="nav-social">
-          <a href="https://twitter.com/scott_geiser">Twitter</a>
+          <a target="_blank" href="https://twitter.com/ScottGeyser">Twitter</a>
           |
-          <a href="https://www.instagram.com/scottgeiser_/">Instagram</a>
+          <a target="_blank" href="https://twitter.com/scott_geiser">Instagram</a>
           |
-          <a href="https://github.com/Sprachgefuhl">Github</a>
+          <a target="_blank" href="https://twitter.com/scott_geiser">Reddit</a>
         </p>
 
-<!--         <ul class="home-recent-list">
+        <ul class="home-recent-list">
           <li>
-            <span>
-              <a href="./media/image_temp1.jpg">
-              <img src="{% static "coffee_map/coffeemap.jpg" %}" alt="Coffee Map project"></a>
-            </span>
-            <p>Coffee Map is a project that is cool.</p>
+            <a class="home-list-links" href="./">First Post!</a>
+            <p>Here is a post which is just filler text which I will use to estabish placement where I will otherwise put a blogpost. I will write about my process of writing. Saying things as such as today I did so and so and while doing that I wrote such and such. d dd d sa sdd sa asd dsa a s s
+            </p>
           </li>
-          {% for project in object_list|slice:":6" %}
           <li>
-            <span>
-              <a href="{% url 'scotts_blog_app:project_detail' project.slug %}">
-              <img src="{{ project.project_art_icon.url }}" alt="{{ project.project_title }}"></a>
-            </span>
-            <p>{{ project.project_lead|safe }}</p>
-        
-          {% empty %}
-            <li>No threads added yet.</li>
-          {% endfor %}
+            <a class="home-list-links" href="./">Fifth Post!</a>
+            <p>>Here is a post which is just filler text which I will use to estabish placement where I will otherwise put a blogpost. I will write about my process of writing. Saying things as such as today I did so and so and while doing that I wrote such and such. adsfasf asdf asdf asd f
+            </p>
+          </li>
+          <li>
+            <a class="home-list-links" href="./">Second Post!</a>
+            <p>Here is a post which is just filler text which I will use to estabish placement where I.
+            </p>
+          </li>
         </ul>
 
-        <p class="home-bottom-nav">
-        <a href="{% url 'scotts_blog_app:home_page' %}">All Projects</a>
-        |
-        <a href="{% url 'scotts_blog_app:home_page' %}">All Blogposts</a>
-        </p> -->
-        
+
       </section>
     </main>
   </body>
