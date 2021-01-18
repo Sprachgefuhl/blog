@@ -1,2 +1,1 @@
-# blog
-A simple, minimal site for sharing my thoughts.
+# website for pen name.
